@@ -1,3 +1,5 @@
+-- Creating Empoyees Table
+
 CREATE TABLE employees (
     emp_no VARCHAR   NOT NULL,
     emp_title_id VARCHAR NOT NULL,
@@ -11,6 +13,9 @@ CREATE TABLE employees (
 
 Select * From employees
 
+
+-- Creating Departments Table
+
 CREATE TABLE departments (
     dept_no VARCHAR   NOT NULL,
     dept_name VARCHAR   NOT NULL,
@@ -18,6 +23,9 @@ CREATE TABLE departments (
 );
 
 Select * From departments
+
+
+-- Creating Dept_Emp Table
 
 CREATE TABLE dept_emp (
     emp_no VARCHAR   NOT NULL,
@@ -29,6 +37,8 @@ CREATE TABLE dept_emp (
 
 Select * From dept_emp
 
+
+-- Creating Dept_Manager Table
 CREATE TABLE dept_manager (
   dept_no VARCHAR NOT NULL,
   emp_no VARCHAR NOT NULL,
@@ -39,6 +49,9 @@ CREATE TABLE dept_manager (
 
 Select * From dept_manager
 
+
+-- Creating Salaries Table
+
 CREATE TABLE salaries (
   emp_no VARCHAR NOT NULL,
   salary INTEGER NOT NULL,
@@ -47,6 +60,9 @@ CREATE TABLE salaries (
 );
 
 Select * From salaries
+
+
+-- Creating Titles Table
 
 CREATE TABLE titles (
   title_id VARCHAR PRIMARY KEY,
